@@ -1,69 +1,48 @@
-0x06. Star Wars API
-===================
+# 0x06. Star Wars API
+#### `Algorithm` `API` `JavaScript`
+![starwars](https://github.com/samuelselasi/alx-interview/assets/85158665/9d2eee0e-a0d3-480a-a36c-30a3027de4c5)
 
-AlgorithmPythonAPI
-
--   By Alexa Orrico, Software Engineer at Holberton School
--   Weight: 1
-
-
-Requirements
-------------
-
+## Requirements
 ### General
+* Allowed editors: vi, vim, emacs
+* All your files will be interpreted on Ubuntu 20.04 LTS using node (version 10.14.x)
+* All your files should end with a new line
+* The first line of all your files should be exactly #!/usr/bin/node
+* A README.md file, at the root of the folder of the project, is mandatory
+* Your code should be semistandard compliant. Rules of Standard + semicolons on top. Also as reference: AirBnB style
+* All your files must be executable
+* The length of your files will be tested using wc
+* You are not allowed to use var
 
--   Allowed editors: `vi`, `vim`, `emacs`
--   All your files will be interpreted on Ubuntu 14.04 LTS using `node` (version 10.14.x)
--   All your files should end with a new line
--   The first line of all your files should be exactly `#!/usr/bin/node`
--   A `README.md` file, at the root of the folder of the project, is mandatory
--   Your code should be `semistandard` compliant. [Rules of Standard](https://standardjs.com/rules.html "Rules of Standard") + [semicolons on top](https://github.com/standard/semistandard "semicolons on top"). Also as reference: [AirBnB style](https://github.com/airbnb/javascript "AirBnB style")
--   All your files must be executable
--   The length of your files will be tested using `wc`
--   You are not allowed to use `var`
-
-More Info
----------
-
-### Install Node 10
-
+### More Info
+#### Install Node 10
 ```
 $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
-
-### Install semi-standard
-
-[Documentation](https://github.com/standard/semistandard "Documentation")
-
+#### Install `semi-standard`
+[Documentation](https://github.com/standard/semistandard)
 ```
 $ sudo npm install semistandard --global
-
 ```
 
-### Install `request` module and use it
-
-[Documentation](https://github.com/request/request "Documentation")
-
+#### Install `request` module and use it
+[Documentation](https://github.com/request/request)
 ```
 $ sudo npm install request --global
 $ export NODE_PATH=/usr/lib/node_modules
 ```
 
-Tasks
------
+## Tasks
 
-### 0\. Star Wars Characters
-
-mandatory
+[0. Star Wars Characters](./0-starwars_characters.js)
 
 Write a script that prints all characters of a Star Wars movie:
 
--   The first positional argument passed is the Movie ID - example: `3` = "Return of the Jedi"
--   Display one character name per line **in the same order as the "characters" list in the `/films/` endpoint**
--   You must use the [Star wars API](https://swapi-api.alx-tools.com/ "Star wars API")
--   You must use the `request` module
-
+* The first positional argument passed is the `Movie ID` - example: `3 = “Return of the Jedi”`
+* Display one character name per line **in the same order as the `“characters”` list in the `/films/` endpoint**
+* You must use the [Star wars API](https://swapi-api.alx-tools.com/)
+* You must use the `request` module
 ```
 alexa@ubuntu:~/0x06$ ./0-starwars_characters.js 3
 Luke Skywalker
@@ -88,9 +67,3 @@ Nien Nunb
 Bib Fortuna
 alexa@ubuntu:~/0x06$
 ```
-
-**Repo:**
-
--   GitHub repository: `alx-interview`
--   Directory: `0x06-starwars_api`
--   File: `0-starwars_characters.js`
